@@ -1,0 +1,4 @@
+{
+ "$schema": "../gen/schemas/desktop-schema.json", "identifier": "desktop", "description": "Local island and settings windows", "windows": ["island", "settings"],
+ "permissions": ["core:default", "dialog:allow-open", "autostart:allow-enable", "autostart:allow-disable", "autostart:allow-is-enabled"]
+}

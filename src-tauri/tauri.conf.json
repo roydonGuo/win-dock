@@ -1,0 +1,9 @@
+{
+ "$schema": "https://schema.tauri.app/config/2", "productName": "Desktop Island", "version": "0.1.0", "identifier": "com.desktopisland.desktop",
+ "build": { "beforeDevCommand": "npm run dev", "devUrl": "http://localhost:1420", "beforeBuildCommand": "npm run build", "frontendDist": "../dist" },
+ "app": {
+  "windows": [{ "label": "island", "title": "Desktop Island", "width": 340, "height": 90, "decorations": false, "transparent": true, "shadow": false, "alwaysOnTop": true, "skipTaskbar": true, "resizable": false, "visible": false }],
+  "security": { "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: asset: http://asset.localhost; connect-src ipc: http://ipc.localhost https://api.open-meteo.com https://geocoding-api.open-meteo.com" }
+ },
+ "bundle": { "active": true, "targets": ["nsis"], "icon": ["icons/icon.png", "icons/icon.ico"], "windows": { "nsis": { "displayLanguageSelector": true, "languages": ["SimpChinese", "English"] } } }
+}
